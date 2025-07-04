@@ -1,0 +1,884 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM SANS', sans-serif;
+}
+.logotext{
+    font-family: 'Dokdo', cursive;   
+    font-size: 2rem;
+    }
+.header_bar{
+    background-color: #16404D;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.trips{
+    text-decoration: underline;
+    color: white;
+}
+.navbar-background{
+    background-color: #c8efff;
+    width: fit-content;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.navactive{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-family: 'Dokdo', cursive;
+}
+.login{
+    background-color:#c8efff;
+    border-radius: 1rem;
+    padding:1rem;
+    height:fit-content;
+}
+.textspacing{
+    margin-right: 7rem;
+}
+.textspacing1{
+    margin-right: 6rem;
+}
+.backgroundcolor{
+    background-color: #c8efff;
+    width: fit-content;
+    border-radius: 10px;
+}
+.underline{    
+    width: 15rem;
+}
+.inputwidth{
+    width: 15rem;
+}
+.introflex{
+    margin:2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10em;
+}
+@media (max-width: 768px) {
+.introflex{
+     gap: 1rem;
+      flex-wrap: wrap;
+}
+}
+.introflex h1{
+    font-size: 4rem;
+}
+.introflex p{
+    font-size: 1.5rem;
+}
+.buttonbg{
+    background-color: #16404D;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    width: fit-content;    
+}
+
+.headerview{
+    background-image: url(../images/header\ image.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: relative;
+    height: 70vh;
+    margin:3rem;
+}
+@media (max-width: 768px) {
+.headerview{
+    height: fit-content;
+    background-image: none;
+}
+}
+.headerdetails{
+    position: absolute;
+    left:10rem;
+    top: 23rem;
+    background-color:#c8efff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+@media (min-width: 769px) and (max-width:1024px) {
+     .headerdetails{
+        flex-wrap: wrap;
+        left:2rem;
+        top: 23rem;
+        gap:1rem;
+        margin:1rem;
+       
+     }
+
+}
+@media (max-width: 768px) {
+    .headerdetails{
+    position: static;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap:1rem;
+}
+}
+.smallscreenimg{
+    display: none;
+}
+@media (max-width: 768px) {
+.smallscreenimg{
+    display: block;
+}
+}
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    color: #16404D;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+}
+
+.tab-content .content {
+    display: none;
+}
+
+.tab-content .content.active {
+    display: block;
+}
+
+.destinationgrid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+@media (min-width: 769px) and (max-width:1024px) {
+    .destinationgrid{
+    grid-template-columns: repeat(3,1fr);
+    margin:2rem;
+}
+}
+@media (max-width: 768px) {
+    .destinationgrid{
+    grid-template-columns: 1fr;
+     margin:2rem;
+}
+}
+@media (max-width: 768px) {
+.fujiimg{
+    width:100%;
+}}
+.destination-items{
+    position: relative;
+    width:fit-content;
+    margin:0.1rem;
+}
+.white-bg-button{
+    background-color: white;
+    color: black;
+    border-radius: 1rem;  
+    padding: 0.2rem;  
+}
+.destination-button1{
+    position:absolute;
+    top: 14rem;
+    left:5rem;
+}
+
+.destination-button2{
+    position:absolute;
+    top: 14rem;
+    left:5rem;
+}
+.destination-button3{
+    position:absolute;
+    top: 14rem;
+     left:5rem;
+}
+.destination-button4{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.destination-button5{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.destination-button6{
+    position:absolute;
+    top: 14rem;
+     left:5rem;
+}
+
+.activity-button1{
+    position:absolute;
+    top: 14rem;
+    left:5rem;
+}
+
+.activity-button2{
+    position:absolute;
+    top: 14rem;
+    left:5rem;
+}
+.activity-button3{
+    position:absolute;
+    top: 14rem;
+     left:5rem;
+}
+.activity-button4{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.activity-button5{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.activity-button6{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+
+.collection-button1{
+    position:absolute;
+    top: 14rem;
+    left:3rem;
+}
+
+.collection-button2{
+    position:absolute;
+    top: 14rem;
+    left:3rem;
+}
+.collection-button3{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.collection-button4{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.collection-button5{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.collection-button6{
+    position:absolute;
+    top: 14rem;
+     left:3rem;
+}
+.tour-details-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+   flex-wrap: wrap;
+}
+
+.tour-details-items{
+    box-shadow: 3px 3px 3px lightgrey;
+    border-radius: 2rem;
+    position: relative;
+    padding: 1rem;
+    height: 550px;
+}
+.tour-details-viewall-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tour-details-view{
+    align-self: center;
+}
+.tour-details-button{
+    background-color: white;
+    border-radius: 1rem;
+    position: absolute;
+    top: 2rem;
+    left:2rem;
+    padding: 1rem;
+}
+.rightlevel-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+.rightlevel-item {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.difficultylevel-container {
+    position: absolute;
+    top: 13rem;
+    left:6rem;
+    display: flex;
+    gap:2px;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.difficultylevel-container p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.difficultylevel-item1{
+    height: 25px;
+    width: 25px;;
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+.difficultylevel-item2{
+    height: 25px;
+    width: 25px;;
+    border-radius: 50%;
+    background-color: gray;
+}
+.difficultylevel-item3{
+    height: 25px;
+    width: 25px;;
+    border-radius: 50%;
+    background-color: green;
+}
+.difficultylevel-item4{
+    height: 25px;
+    width: 25px;;
+    border-radius: 50%;
+    background-color:yellow;
+}
+.difficultylevel-item5{
+    height: 25px;
+    width: 25px;;
+    border-radius: 50%;
+    background-color:red;
+}
+
+.tour-guide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.tour-guide-items{
+    box-shadow: 3px 3px 3px lightgrey;
+    border-radius: 2rem;
+    position: relative;
+    padding: 1rem;
+    height:380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tour-guide-items h6{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.tour-guide-items p{   
+    font-size: 1rem;
+}
+
+.imgstack{
+    position: relative;
+}
+.imgstack-item1{
+    position: absolute;
+   top:0rem;
+    left:-5rem;
+}
+.imgstack-item2{
+    position: absolute;
+    top:0rem;
+    left:-3rem;
+}
+.imgstack-item3{
+    position: absolute;
+    top:0rem;
+    left:-1rem;
+}.imgstack-item4{
+    position: absolute;
+    top:0rem;
+    left:1rem;
+}.imgstack-item5{
+    position: absolute;
+    top:0rem;
+    left:3rem;
+}
+
+.tourguide-stack-container{
+    color: white;
+    background-color: #16404D;
+    border-radius:  2rem;
+    height: 300px;
+    width: 220px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guide{
+    padding-top: 3rem;
+}
+.everystep-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media (max-width: 768px) {
+.everystep-container{
+    grid-template-columns: 1fr;
+    padding:0.1rem;
+}
+}
+@media (max-width: 768px) {
+
+}
+.everystep-griditem{
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+    margin:2rem;
+    padding: 2rem;
+    gap:1rem;
+}
+@media (max-width: 768px) {
+.everystep-griditem{   
+    padding:0.1rem;
+    gap: 0.1rem;
+}
+}
+everystep-griditem h1,h6,h5{
+    color: #16404D;
+}
+.featuresgrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .featuresgrid{
+    grid-template-columns: 1fr;
+    }
+}
+.packagegrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:2rem;
+}
+@media (max-width: 768px) {
+    .packagegrid{
+    
+    grid-template-columns:1fr;
+    margin:1rem;
+}
+}
+.packagegritem{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin:0.5rem;
+}
+.packagegrid p{
+    margin-bottom: 0;
+}
+.difficulty-wrapper{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    left:1rem;
+    color: white;
+    background-color: #16404D;
+    border-radius: 1rem;
+}
+
+.difficultybutton1{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+.difficultybutton2{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.difficultybutton3{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+.difficultybutton4{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:yellow;
+}
+.difficultybutton5{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:red;
+}
+.amtflex{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:  2px solid black;
+}
+
+
+
+.maingrid{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin:1rem;
+    flex-wrap: wrap;
+}
+.maingrid img{
+    border-radius: 2rem;
+}
+.accordion-button.custom-dark {
+    background-color: #16404D;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.accordion-button.custom-dark::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+
+}
+.accordion-button.custom-dark:not(.collapsed) {
+    background-color: #16404D;
+    color: white;
+    box-shadow: none;
+}
+.accordion-button.custom-dark:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.accordion-button.custom-light:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.accordion-button.custom-light {
+    background-color: #c8efff;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+}
+.background-light{
+    background-color: #c8efff;
+    border-radius: 1rem;
+}
+
+.destination1container{
+    background-image: url(../images/des\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 80vh;
+    color: white;
+    padding:2rem;
+}
+.destination1container h4{
+    color: white;
+}
+.destination1containerwrapper{
+    margin:2rem;
+}
+
+
+.destination2container{
+    background-image: url(../images/des\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 80vh;
+    color: white;
+    padding:2rem;
+}
+.destination2container h4{
+    color: white;
+}
+
+
+.destination3container{
+    background-image: url(../images/des\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 80vh;
+    color: white;
+    padding:2rem;
+}
+.destination3container h4{
+    color: white;
+}
+
+
+.dropdownflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foodaccordiangrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.foodaccordian-img{
+    width: 20px;
+    height:20px;
+}
+
+.aboutcontainer{
+    margin:2rem;
+    font-size: 1.5rem;
+}
+.storycontainer{
+    margin: 2rem;
+}
+.storycontainer p{
+    font-size: 1.5rem;
+
+}
+.storycontainer h3{
+    font-size: 2rem;
+
+}
+.contactcontainer{
+    margin:3rem;
+    font-size: 1.5rem;
+}
+.impactcontainer{
+    font-size: 1.3rem;
+    margin:3rem;
+
+}
+.impactcontainer h3{
+    font-size: 2rem;
+}
+.logincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:2rem;
+}
+.logincontainer h1{
+    font-family: 'Dokdo', cursive;
+}
+.logincontainer form{
+    width:50%;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+.logincontainer form{
+     width:100%;
+}
+}
+.logincontainer button{
+    background-color: #16404D;
+    color: white;
+    width: 100%;
+    margin:1rem;
+}
+.logincontainer input{
+    margin:1rem;
+    border-radius: 0;
+}
+.teamgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .teamgrid{
+    grid-template-columns: 1fr;
+}
+}
+.griditemflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+    padding:1rem;
+}
+.griditemflex h3{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.griditemflex p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.griditemflex h6{
+    font-size: 1rem;
+    text-align: center;
+}
+.coloredtext{
+    color: #16404D;
+}
+footer{
+    background-image: url(../images/footer\ image.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer h1{
+    color: white;
+    font-family: 'Dokdo', cursive;
+}
+footer a{
+    color: white;
+}
+.footerflex{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 10rem;
+    flex-wrap: wrap;
+}
+.bluebg{
+    background-color: #c8efff;
+    padding: 1rem;
+    width: 100%;
+    margin:0.5rem;
+}
+
+.bookingcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin :2rem;
+    
+}
+.qty-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      max-width: 160px;
+      margin: 2rem auto;
+      border: 1px solid black;
+    }
+.qty-container input{
+    border: none;
+    background-color: #c8efff;
+}
+.bookingwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3rem;
+    padding: 2rem;
+}
+.floatinginput{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c8efff;  
+    width: 100%;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.floatinginputitem{
+      position: relative;
+}
+.floatinginputitem input{
+    background-color: lightgray;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+.floatinginputitem label{
+    position: absolute;
+    top:-0.9rem;
+    left:2rem;
+    padding:0.1rem;
+    background-color: lightgray;
+}
+.flagabsolute{
+    position: absolute;
+    top:0.6rem;
+    left:1rem;
+    padding:0.1rem;
+}
+.bookingcontainerbutton{
+    background-color: #16404D;
+    color: white;
+    width: 100%;
+    margin:1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.adventurelogo{
+    font-family: 'Dokdo', cursive;
+    font-size: 5rem;
+}
+.conformationimage{
+    width:100%;
+    height:auto;
+}

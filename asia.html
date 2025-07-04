@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_bar">                        
+            <p>FEELING SPONTANEOUS?! SAVE ON <a href="" class="trips"> TRIPS DEPARTING SOON </a></p>
+        </div>
+        <div class="d-flex justify-content-center align-item-center gap-3 ">        
+            <nav class="navbar navbar-expand-md navbar-background">
+            <div class="container">
+                <h1 class="navbar-brand logotext">Adventurage</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link navactive" href="index.html">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About US</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+           
+            <div class="login">
+                <a href="login.html"><img src="images/user icon.png" alt="login"></a>
+            </div>
+        </div>        
+    </header>
+
+
+
+
+     <div class="maingrid">
+        <div class="d-flex flex-column justify-content-center align-item-center gap-2">
+            <!--Filter column-->
+             
+            <!--Search / filter button-->
+            <form class="d-flex">
+                <input class="form-control inputwidth" type="search" placeholder=" 🔍 Search" aria-label="Search">
+            </form>
+            <p>Active Filters:</p>
+            <!--activity filter-->
+            <div class="dropdown backgroundcolor inputwidth">
+                <button class="btn btn-seconday dropdown-toggle" type="button" id="activitydropdown" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/activity filter icon.png" class="me-2"><span class="textspacing">Activity</span></button>
+                <ul class="dropdown-menu me-2"  aria-labelledby="activitydropdown">
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Hiking
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Snorkeling
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Cycling
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Wild Swimming
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Rafting
+                        </label>
+                    </li>
+                    <li class="underline p-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Northern Lights
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Difficulty filter-->
+            <div class="dropdown backgroundcolor inputwidth">
+                <button class="btn btn-seconday dropdown-toggle" type="button" id="difficultydropdown" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/difficult icon.png" class="me-1"><span class="textspacing">Difficulty</span></button>
+                <ul class="dropdown-menu me-2"  aria-labelledby="difficultydropdown">
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Easy
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Moderate
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Challenging
+                        </label>
+                    </li>
+                    <li class="underline p-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Tough
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Destination filter-->
+            <div class="dropdown backgroundcolor inputwidth">
+                <button class="btn btn-seconday dropdown-toggle" type="button" id="difficultydropdown" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/destination filter icon.png" class="me-1"><span class="textspacing1">Destination</span></button>
+                <ul class="dropdown-menu me-2"  aria-labelledby="difficultydropdown">
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Europe
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Asia
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Africa
+                        </label>
+                    </li>
+                    <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        South America
+                        </label>
+                    </li>
+                     <li class="underline p-2 border-bottom">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        North America
+                        </label>
+                    </li>
+                     <li class="underline p-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">
+                        Oceania
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--Package details page-->
+        <div class="packagegrid">
+
+            <div class="packagegritem"><a href="destination1.html">
+                <img src="images/tour 1.png">
+                <div class="difficulty-wrapper">
+                    <div>
+                    <img src="images/easy.png"></div>
+                    <p>Easy</p> 
+                    <div class="d-flex gap-1">
+                        <div class="difficultybutton1"></div>
+                        <div class="difficultybutton2"></div>
+                        <div class="difficultybutton2"></div>
+                        <div class="difficultybutton2"></div>
+                    </div>
+                </div>
+                <p>France * Italy * Switzerland</p>
+                <h3>TREK THE MOUNT BU MONT</h3>
+
+                <div class="amtflex">                    
+                    <div><img src="images/rating star icon.png">4.8 (32 reiviews)</div>
+                    <h5>₹ 40,000</h5>
+                </div>
+                <div>
+                <img src="images/date calender icon.png"> Available * Jun - Sep</div>
+            </a></div>
+            <div class="packagegritem">
+                <a href="destination2.html">
+                <img src="images/tour 2.png">
+                <div class="difficulty-wrapper">
+                    <div>
+                    <img src="images/tough.png"></div>
+                    <p>Tough</p> 
+                    <div class="d-flex gap-1">
+                        <div class="difficultybutton1"></div>
+                        <div class="difficultybutton3"></div>
+                        <div class="difficultybutton4"></div>
+                        <div class="difficultybutton5"></div>
+                    </div>
+                </div>
+                <p>Moroco * North Africa</p>
+                <h3>CLIMB MOUNT TOUBKAL</h3>
+
+                <div class="amtflex">                    
+                    <div><img src="images/rating star icon.png">4.6 (20 reiviews)</div>
+                    <h5>₹ 32,520</h5>
+                </div>
+                <div>
+                <img src="images/date calender icon.png"> Available * Dec - Feb</div>
+            </a></div>
+             <div class="packagegritem">
+                <a href="destination3.html">
+                <img src="images/tour 3.png">
+                <div class="difficulty-wrapper">
+                    <div>
+                    <img src="images/moderate.png"></div>
+                    <p>Moderate</p> 
+                    <div class="d-flex gap-1">
+                        <div class="difficultybutton1"></div>
+                        <div class="difficultybutton3"></div>
+                        <div class="difficultybutton2"></div>
+                        <div class="difficultybutton2"></div>
+                    </div>
+                </div>
+                <p>Georgia</p>
+                <h3>CYCLE THE SILK ROAD</h3>
+
+                <div class="amtflex">                    
+                    <div><img src="images/rating star icon.png">4.9 (15 reiviews)</div>
+                    <h5>₹ 28,000</h5>
+                </div>
+                <div>
+                <img src="images/date calender icon.png"> Available * Jan - Mar</div>
+            </a></div>
+            <div class="packagegritem">
+                <a href="destination1.html">
+                <img src="images/tour 4.png">
+                <div class="difficulty-wrapper">
+                    <div>
+                    <img src="images/easy.png"></div>
+                    <p>Easy</p> 
+                    <div class="d-flex gap-1">
+                        <div class="difficultybutton1"></div>
+                        <div class="difficultybutton2"></div>
+                        <div class="difficultybutton2"></div>
+                        <div class="difficultybutton2"></div>
+                    </div>
+                </div>
+                <p>Norway * Europe</p>
+                <h3>ARTIC CIRCLE FAT EXPENDITURE</h3>
+
+                <div class="amtflex">                    
+                    <div><img src="images/rating star icon.png">4.2 (19 reiviews)</div>
+                    <h5>₹ 25,780</h5>
+                </div>
+                <div>
+                <img src="images/date calender icon.png"> Available * Jun - Sep</div>
+            </a></div>
+            <div class="packagegritem">
+                <a href="destination2.html">
+                <img src="images/tour 5.png">
+                <div class="difficulty-wrapper">
+                    <div>
+                    <img src="images/challenging.png"></div>
+                    <p>Challenging</p> 
+                    <div class="d-flex gap-1">
+                        <div class="difficultybutton1"></div>
+                        <div class="difficultybutton3"></div>
+                        <div class="difficultybutton4"></div>
+                        <div class="difficultybutton2"></div>
+                    </div>
+                </div>
+                <p>New Zealand * Oceania</p>
+                <h3>COAST TO COAST EXPEDITION</h3>
+
+                <div class="amtflex">                    
+                    <div><img src="images/rating star icon.png">4.5 (13 reiviews)</div>
+                    <h5>₹ 72,000</h5>
+                </div>
+                <div>
+                <img src="images/date calender icon.png"> Available * Apr - Jun</div>
+            </a></div>
+            <div class="packagegritem">
+                <a href="destination3.html">
+                <img src="images/tour 6.png">
+                <div class="difficulty-wrapper">
+                    <div>
+                    <img src="images/tough.png"></div>
+                    <p>Tough</p> 
+                    <div class="d-flex gap-1">
+                        <div class="difficultybutton1"></div>
+                        <div class="difficultybutton3"></div>
+                        <div class="difficultybutton4"></div>
+                        <div class="difficultybutton5"></div>
+                    </div>
+                </div>
+                <p>Pennsylvania * US State</p>
+                <h3>CHASE THE AURORA IN LOFOTEN</h3>
+
+                <div class="amtflex">                    
+                    <div><img src="images/rating star icon.png">4.6 (36 reiviews)</div>
+                    <h5>₹ 48,120</h5>
+                </div>
+                <div>
+                <img src="images/date calender icon.png"> Available * Jan - Mar</div>
+            </a></div>
+        </div> 
+    </div>
+
+      <!--Tabbed interface-->
+        
+        <div >
+            <div class="tabs">
+            <a class="tab-button" data-tab="tab1">Destination</a>
+            <a class="tab-button" data-tab="tab2">Activities</a>
+            <a class="tab-button" data-tab="tab3">Collection</a>
+            </div>
+
+            <div class="tab-content">
+                <div id="tab1" class="content active">
+                    <div class="destinationgrid">                    
+                            <div class="destination-items"> <a href="europe.html">                   
+                                <img src="images/europe home.png">
+                                <div class="white-bg-button destination-button1">Europe</div>   </a>                         
+                            </div>
+                                    
+                            <div class="destination-items"> <a href="asia.html">                   
+                                <img src="images/asia home.png">
+                                <div class="white-bg-button destination-button2">Asia</div>   </a>                         
+                            </div>
+                    
+                            <div class="destination-items">  <a href="africa.html">                   
+                                <img src="images/africa home.png">
+                                <div class="white-bg-button destination-button3">Africa</div>   </a>                         
+                            </div>
+                    
+                            <div class="destination-items">  <a href="southamerica.html">                   
+                                <img src="images/south america home.png">
+                                <div class="white-bg-button destination-button4">South America</div>    </a>                        
+                            </div>
+                    
+                            <div class="destination-items"> <a href="northamerica.html">                    
+                                <img src="images/north america home.png">
+                                <div class="white-bg-button destination-button5">North America</div>    </a>                        
+                            </div>
+                    
+                    
+                            <div  class="destination-items"> <a href="oceania.html">                    
+                                <img src="images/oceania home.png">
+                                <div class="white-bg-button destination-button6">Oceania</div>   </a>                         
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div id="tab2" class="content">
+                    <div class="destinationgrid">
+                        
+                            <div class="destination-items"> <a href="">                   
+                                <img src="images/Activity1.png">
+                                <div class="white-bg-button activity-button1">Hiking</div>   </a>                         
+                            </div>  
+                            <div class="destination-items"> <a href="">                   
+                                <img src="images/Activity2.png">
+                                <div class="white-bg-button activity-button2">Cycling</div>   </a>                         
+                            </div>
+                    
+                            <div class="destination-items">  <a href="">                   
+                                <img src="images/Activity3.png">
+                                <div class="white-bg-button activity-button3">Rafting</div>   </a>                         
+                            </div>
+                    
+                            <div class="destination-items">  <a href="">                   
+                                <img src="images/Activity4.png">
+                                <div class="white-bg-button activity-button4">Snorkeling</div>    </a>                        
+                            </div>
+                    
+                            <div class="destination-items"> <a href="">                    
+                                <img src="images/Activity5.png">
+                                <div class="white-bg-button activity-button5">Wild Swimming</div>    </a>                        
+                            </div>
+                    
+                    
+                            <div  class="destination-items"> <a href="">                    
+                                <img src="images/Activity6.png">
+                                <div class="white-bg-button activity-button6">Northern Lights</div>   </a>                         
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div id="tab3" class="content">
+                    <div class="destinationgrid">
+                        
+                            <div class="destination-items"> <a href="">                   
+                                <img src="images/Collection1.png"  class="img-fluid">
+                                <div class="white-bg-button collection-button1">New Adventure</div>   </a>                         
+                            </div>
+                                
+                            <div class="destination-items"> <a href="">                   
+                                <img src="images/Collection2.png"  class="img-fluid">
+                                <div class="white-bg-button collection-button2">Winter Sun</div>   </a>                         
+                            </div>
+                    
+                            <div class="destination-items">  <a href="">                   
+                                <img src="images/Collection3.png"  class="img-fluid">
+                                <div class="white-bg-button collection-button3">Desert & Dunes</div>   </a>                         
+                            </div>
+                    
+                            <div class="destination-items">  <a href="">                   
+                                <img src="images/Collection4.png"  class="img-fluid">
+                                <div class="white-bg-button collection-button4">Foodie Adventure</div>    </a>                        
+                            </div>
+                    
+                            <div class="destination-items"> <a href="">                    
+                                <img src="images/Collection5.png"  class="img-fluid">
+                                <div class="white-bg-button collection-button5">Jungle Adventure</div>    </a>                        
+                            </div>
+                    
+                            <div  class="destination-items"> <a href="">                    
+                                <img src="images/Collection6.png"  class="img-fluid">
+                                <div class="white-bg-button collection-button6">Islands Adventure</div>   </a>                         
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="featuresgrid">
+        <div class="d-flex justify-content-center align-items-center flex-column m-4 gap-3">
+            <img src="images/bottom icon 1.png" alt="icon">
+            <h5>Explore Places you couldn't yourself</h5>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column m-4 gap-3">
+            <img src="images/bottom icon 2.png" alt="icon">
+            <h5>Go with the outdoor specialists</h5>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column m-4 gap-3">
+            <img src="images/bottom icon 3.png" alt="icon">
+            <h5>Join a small like-minded group</h5>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column m-4 gap-3">
+            <img src="images/bottom icon.png" alt="icon">
+            <h5>Hassle-free from start to finish</h5>
+        </div>
+    </div>
+
+ <footer>
+        <div class="footerflex">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <a href="index.html"><h1>Adventurage</h1></a>
+                <h4>-BOOK WITH CONFIDENCE-</h4>
+            </div>
+            <div class="d-flex justify-content-center align-item-center flex-column flex-md-row gap-3 flex-wrap">
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                    <p class="fw-bold">About</p>
+                    <a href="ourstory.html"><p>Our Story</p></a>
+                    <a href="ourimpact.html"><p>Our Impact</p></a>
+                    <a href="meettheteam.html"><p>Meet the Team</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                    <p class="fw-bold">Customers</p>
+                    <a href="contactus.html"><p>Contact Us</p></a>
+                    <a href="terms&conditions.html"><p>Terms & Conditions</p></a> 
+                    <a href="privacypolicy.html"><p>Privacy Policy</p></a>
+                    <a href=""><p>Agency Booking</p></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; Copyright Adventurage Ltd. Registration Number: 0123456789</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
